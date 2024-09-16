@@ -1,14 +1,19 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: var(--lux-color-background-default);
+  --foreground: var(--lux-color-foreground-default);
+  --link: var(--lux-color-foreground-link);
+  --nav-padding: var(--lux-space-100);
+  --nav-bg: var(--lux-color-background-subdued);
+  --main-padding-inline: var(--lux-space-100);
+  --main-padding-block: var(--lux-space-200);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 html,
 body {
@@ -18,6 +23,7 @@ body {
 
 body {
   color: var(--foreground);
+  fill: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -30,9 +36,23 @@ body {
   margin: 0;
 }
 
+nav {
+  padding-inline: var(--nav-padding);
+  padding-block: var(--nav-padding);
+  background-color: var(--nav-bg);
+  --lux-icon-color: var(--foreground);
+}
+
 a {
-  color: inherit;
-  text-decoration: none;
+  --lux-icon-color: var(--link);
+  --lux-alert-icon-inset-block-start: var(--lux-space-25);
+  color: var(--link);
+  text-decoration: underline dotted var(--link);
+}
+
+main {
+  padding-inline: var(--main-padding-inline);
+  padding-block: var(--main-padding-block);
 }
 
 @media (prefers-color-scheme: dark) {

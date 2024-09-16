@@ -1,0 +1,6 @@
+.matrix {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 0.5rem;
+}

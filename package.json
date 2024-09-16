@@ -9,16 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@lux-design-system/components-react": "^1.0.0-alpha.0",
+    "next": "14.2.9",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.9"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@lux-design-system/design-tokens": "^1.0.0",
+    "@lux-design-system/web-components-react": "^1.0.0-alpha.0",
+    "@lux-design-system/web-components-stencil": "^1.0.0-alpha.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@utrecht/component-library-css": "5.0.0",
     "eslint": "^8",
-    "eslint-config-next": "14.2.9"
+    "eslint-config-next": "14.2.9",
+    "typescript": "^5"
   }
 }
