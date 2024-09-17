@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+// import "@utrecht/design-tokens/dist/root.css";
 import "@lux-design-system/design-tokens/dist/logius/index.css";
 import "./globals.css";
-import { useEffect } from "react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

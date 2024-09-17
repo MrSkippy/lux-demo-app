@@ -10,10 +10,10 @@ import "@utrecht/component-library-css";
 export default function Page() {
   return (
     <>
-      <h1>Kijkje in de keuken</h1>
+      <h1>Flash of Unstyled Content</h1>
       <Matrix cols={4}>
         <div><h2>Button</h2></div>
-        <button type="button" className='utrecht-button utrecht-button--primary-action'>LUX Tokens</button>
+        <button type="button" className='utrecht-button utrecht-button--primary-action'>HTML - LUX Tokens</button>
         <Button appearance="primary-action-button">LUX Webcomponent</Button>
         <LuxButton variant="primary" size={undefined}>LUX React component</LuxButton>
         <div><h2>Alert</h2></div>
@@ -21,18 +21,18 @@ export default function Page() {
           <div className="utrecht-alert__icon">[ℹ️]</div>
           <div className="utrecht-alert__content">
             <div className="utrecht-alert__message" role="alert">
-              <p className="utrecht-paragraph">LUX Tokens</p>
+              <p className="utrecht-paragraph">HTML - LUX Tokens</p>
             </div>
           </div>
         </div>
         <Alert type="info"><Paragraph>LUX Webcomponent</Paragraph></Alert>
         <LuxAlert type="info">LUX React component *</LuxAlert>
-        <div><h2>Blockquote</h2></div>
+        {/* <div><h2>Blockquote</h2></div>
         <div className="utrecht-blockquote">LUX tokens</div>
         <div>tbd</div>
-        <LuxBlockquote>LUX React component</LuxBlockquote>
+        <LuxBlockquote>LUX React component</LuxBlockquote> */}
       </Matrix>
-      <p>* Wrapped in <code>use client</code> because code uses <code>useState</code>.</p>
+      <p style={{textAlign: "right", paddingBlockStart: "2rem"}}>* Wrapped in <code>use client</code> because code uses <code>useState</code>.</p>
     </>
   )
 }
